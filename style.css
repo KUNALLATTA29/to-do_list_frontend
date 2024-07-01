@@ -17,7 +17,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 3vh;
+  gap: 1vh;
   background-color: rgba(189, 175, 155, 0.264);
 }
 .box:hover{
@@ -26,12 +26,11 @@
 h1{
   font-size: 5vw;
 }
-h6{
-  font-size: 2vw;
+label{
+  font-size: 3vw;
 }
-#date{
-  padding: 1.5vw;
-  width: 30vw;
+input{
+  padding: 1vw;
 }
 #btn{
   padding: 2vw;
@@ -40,10 +39,14 @@ h6{
   border: none;
   color: white;
   background-color: burlywood;
+  margin-bottom: 5vh;
 }
 #btn:hover{
   cursor: pointer;
   color: burlywood;
   background-color: white;
   border: 1px solid burlywood;
+}
+#result{
+  margin-top: 3vh;
 }

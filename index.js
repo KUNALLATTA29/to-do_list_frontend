@@ -1,11 +1,12 @@
 
 document.getElementById("btn").addEventListener('click',() =>{
   
-  let year = parseInt(document.getElementById("date").value);
+  let a = parseFloat(document.getElementById("amount").value);
 
-  let current_year = new Date().getFullYear();
+  let b = parseFloat(document.getElementById("tip").value);
 
-  let age = current_year-year;
+  let final_tip = (b/100)*a;
+  document.getElementById("show_tip").innerText = `Tip Amount is: ${final_tip}`;
 
-  document.getElementById("result").innerText = `Your age is ${age}`;
+  document.getElementById("result").innerText = `Total Amount is: ${final_tip+a}`
 })

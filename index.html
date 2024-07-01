@@ -3,17 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FD Calculator</title>
+  <title>Tip Calculator</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="container">
     <div class="box">
-      <h1>Age calculator</h1>
-      <h6>Select your date of birth:</h6>
-      <input id="date" type="date"><br>
-      <button id="btn">Calculate Age</button>
-      <p id="result"></p>
+      <h1>Tip calculator</h1>
+      <label for="amount">Enter Amount:</label><br>
+      <input type="number" id="amount"><br>
+      <label for="tip">Enter tip %</label><br>
+      <input type="number" id="tip"><br>
+      <button id="btn">Total amount</button>
+      <p id="show_tip">Tip Amount</p>
+      <p id="result">Total Amount</p>
     </div>
   </div>
   <script src="index.js"></script>
