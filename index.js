@@ -1,11 +1,36 @@
-function sol(){
-  let prin = parseFloat(document.getElementById('i1').value);
-  let int = parseFloat(document.getElementById('i2').value);
-  let ten = parseFloat(document.getElementById('i3').value);
+let t_alpha_c = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+let t_alpha_s = "abcdefghijklmnopqrstuvwxyz";
+let t_sym = "!@#$%^&*()_+-=[]{}|;:'\",.<>?/`~";
+let t_num = "1234567890";
 
-  let solution = prin + (prin*int*ten)/100;
+let length = document.getElementById("length");
+let low = document.getElementById("lowercase");
+let upp = document.getElementById("uppercase");
+let num = document.getElementById("number");
+let sam = document.getElementById("symbols");
 
-  document.getElementById('result').innerText= `Maturity Amount: ${solution.toFixed(2)}`;
-}
+document.getElementById("btn").addEventListener('click',() =>{
 
-document.getElementById('btn').addEventListener('click',sol);
+  let char = "";
+  let zoom = "";
+  let total_length = parseInt(length.value);
+
+  if(low.checked){
+    char +=t_alpha_s;
+  }
+  if(upp.checked){
+    char += t_alpha_c;
+  }
+  if(num.checked){
+    char +=t_num;
+  }
+  if(sam.checked){
+    char += t_sym;
+  }
+
+  for(let i=0;i<total_length;i++){
+    zoom += char.charAt(Math.floor(Math.random()*char.length));
+  }
+
+  document.getElementById("result").value = zoom;
+})

@@ -9,44 +9,39 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: rgba(215, 177, 125, 0.264);
 }
 .box{
-  display: flex;
-  flex-direction: column;
-  gap: 1vh;
-  padding: 5vw;
-  background-color: cornflowerblue;
+  padding: 4vw;
+  border-radius: 10px;
 }
 .box:hover{
-  box-shadow: 10px 20px 20px 10px black;
+  box-shadow: 10px 10px 10px 5px burlywood;
 }
-.box h1{
-  font-size: 8vw;
+h1{
+  font-size: 5vw;
 }
-label{
-  font-size: 3vw;
-  -webkit-text-stroke:1px rgb(70, 14, 122) ;
-}
-#i1,#i2,#i3{
-  font-size: 4vw;
-  width: 80%;
-  border: 1px solid blueviolet;
+#result{
+  padding: 2vh;
+  width: 40vw;
+  border: 1px solid burlywood;
 }
 button{
   padding: 1.5vw;
-  width: 30%;
-  font-size: 2vw;
   color: white;
-  background-color:blueviolet;
+  background-color: burlywood;
   border: none;
 }
-button:hover{
-  color: blueviolet;
-  background-color: white;
-  border: 1px solid blueviolet;
+.main{
+  margin-top: 4vh;
+  margin-bottom: 3vh;
 }
-p{
-  padding-top: 5vh;
+label{
   font-size: 3vw;
-  padding-left: 10vw;
+}
+button:hover{
+  cursor: pointer;
+  color: burlywood;
+  background-color: white;
+  border: 1px solid burlywood;
 }
