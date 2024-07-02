@@ -31,17 +31,23 @@ label{
 }
 input{
   padding: 1vw;
+  width: 50vw;
+  border: none;
+  border-radius: 10px;
 }
-#btn{
-  padding: 2vw;
-  width: 20vw;
+.zoom{
+  margin-top: 5vh;
+}
+#addbtn{
+  padding: 1vw;
+  width: 15vw;
   border-radius: 50px;
   border: none;
   color: white;
   background-color: burlywood;
   margin-bottom: 5vh;
 }
-#btn:hover{
+#addbtn:hover{
   cursor: pointer;
   color: burlywood;
   background-color: white;
@@ -50,3 +56,33 @@ input{
 #result{
   margin-top: 3vh;
 }
+ul{
+  list-style: none;
+  width: 100%;
+  flex-direction: column;
+  display: flex;
+  gap: 2vh;
+}
+li{
+  display: flex;
+  justify-content: space-between;
+  background-color:burlywood;
+  width: 100%d;
+  padding: 1vw;
+  border-radius: 10px;
+}
+.delbtn{
+  padding: .5vw;
+  width: 10vw;
+  color: black;
+  background-color: bisque;
+  border-radius: 10px;
+  border: none;
+}
+.delbtn:hover{
+  cursor: pointer;
+  color: burlywood;
+  background-color: white;
+  border: 1px solid burlywood;
+}
+

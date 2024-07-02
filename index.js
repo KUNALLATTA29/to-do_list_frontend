@@ -1,12 +1,22 @@
+document.getElementById("addbtn").addEventListener('click', () =>{
 
-document.getElementById("btn").addEventListener('click',() =>{
-  
-  let a = parseFloat(document.getElementById("amount").value);
+  let task_to_add = document.getElementById("task").value;
+  let newlist = document.getElementById("list");
 
-  let b = parseFloat(document.getElementById("tip").value);
+  if(task_to_add!=""){
 
-  let final_tip = (b/100)*a;
-  document.getElementById("show_tip").innerText = `Tip Amount is: ${final_tip}`;
+    let creating_list = document.createElement("li");
+    creating_list.innerText = task_to_add;
+    let deletebtn = document.createElement("button");
+    deletebtn.innerText = "X";
 
-  document.getElementById("result").innerText = `Total Amount is: ${final_tip+a}`
+    deletebtn.classList.add("delbtn");
+    deletebtn.addEventListener('click',() =>{
+      creating_list.remove();
+    });
+
+    creating_list.appendChild(deletebtn);
+    newlist.appendChild(creating_list);
+    task.value = "";
+  }
 })
